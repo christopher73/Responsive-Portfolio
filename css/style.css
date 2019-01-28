@@ -1,5 +1,6 @@
 html {
   height: 100%;
+  width: 100%;
 }
 body {
   background-image: url("../attributes/city.jpg");
@@ -10,6 +11,7 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 h1 {
   text-align: center;
@@ -34,7 +36,7 @@ li {
 li a {
   display: block;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px;
   text-decoration: none;
   color: #dbabab;
 }
@@ -86,8 +88,8 @@ input {
   width: 100%;
   height: auto;
 }
-footer {
-  position: absolute;
+.footer {
+  position: fixed;
   padding: 15px;
   bottom: 0px;
   width: 100%;
@@ -117,4 +119,183 @@ footer {
 
 .fab:hover {
   color: rgb(200, 206, 170);
+}
+
+@media only screen and (max-width: 980px) {
+  nav li {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  body {
+    height: 100vh;
+  }
+  .content {
+    width: 800px;
+  }
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  form {
+    height: 100%;
+  }
+  input {
+    width: 300px;
+  }
+  .buttom {
+    font-size: 0.5em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  nav li {
+    font-size: 1em;
+  }
+  a {
+    width: 600px;
+    margin: auto;
+  }
+  body {
+    height: 100vh;
+  }
+  .content {
+    width: 600px;
+    height: auto;
+    background-color: black;
+    color: rgb(200, 206, 170);
+    text-align: left;
+    font-size: 2.5em;
+    opacity: 1;
+    margin-bottom: 25px;
+    padding: 0;
+    overflow-y: auto;
+  }
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 0.5em;
+  }
+  h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+  }
+  .media a {
+    font-size: 0.5em;
+  }
+  form {
+    height: 100%;
+  }
+  input {
+    width: 300px;
+  }
+  .buttom {
+    font-size: 0.5em;
+  }
+}
+@media only screen and (max-width: 640px) {
+  nav li {
+    font-size: 1em;
+    width: 100%;
+  }
+  a {
+    width: 400px;
+    float: left;
+    left: 0;
+    margin: 0;
+  }
+
+  body {
+    height: 100vh;
+  }
+  .content {
+    width: 400px;
+    height: auto;
+    background-color: black;
+    color: rgb(200, 206, 170);
+    text-align: left;
+    font-size: 2.5em;
+    opacity: 1;
+    margin-bottom: 25px;
+    padding: 0;
+    overflow-y: auto;
+  }
+
+  .footer {
+    position: fixed;
+  }
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 0.5em;
+  }
+  h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+  }
+  .fa {
+    text-align: center;
+  }
+  form {
+    height: 100%;
+  }
+  input {
+    width: 300px;
+  }
+  .buttom {
+    font-size: 0.5em;
+  }
+  .grid {
+    display: block;
+  }
+  .gallery {
+    width: 100%;
+    margin-top: 15px;
+  }
 }
